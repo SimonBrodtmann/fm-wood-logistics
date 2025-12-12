@@ -159,6 +159,18 @@ if settings.startup["wood-logistics-belts"].value then
             scale = 0.5
           }
         }
+      },
+      factoriopedia_simulation = {
+        init =
+          [[
+            game.simulation.camera_position = {0, 0.5}
+            game.simulation.camera_zoom = 1.8
+            game.surfaces[1].create_entities_from_blueprint_string
+            {
+              string = "0eNqVUNsKgzAM/Zc81+FEBfsrYwwvQQKaltpuivjvS3Wwh8HGnkKSc0tWaIaA1hF70CtMXNvEm6R31MV+Bl0oWECfNwXUGp5AXwRGPddDBHA9Imh4GNMlgTt0vTNSkwYHD5EjsznSrwqQPXnCQ2JvlhuHsUEnAPVdSoE1k7ANv2KlpyOYVLHpyGF7bHMFfrFRidiGGOLDLPvXLP9tZoLf3eRO8jjK5P1YBXd0004oyqzKq6ooqzLNinLbnvlmf6E=",
+              position = {-0.5, 0}
+            }
+          ]]
       }
     },
     {
